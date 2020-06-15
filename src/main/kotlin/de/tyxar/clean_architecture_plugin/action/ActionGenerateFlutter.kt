@@ -59,14 +59,14 @@ class ActionGenerateFlutter : AnAction() {
                     Generator.createFolder(
                         project, data,
                         "remote",
-                        "models", "data_sources"
+                        "dto", "data_sources"
                     )
                 }
             } else {
                 Generator.createFolder(
                     project, folder,
                     "data",
-                    "repositories", "data_sources", "models"
+                    "repositories", "data_sources", "dto"
                 )
             }
             Generator.createFolder(
@@ -77,7 +77,7 @@ class ActionGenerateFlutter : AnAction() {
             Generator.createFolder(
                 project, folder,
                 "presentation",
-                "manager", "pages", "widgets"
+                "presenter", "screens", "widgets"
             )
         }
     }
